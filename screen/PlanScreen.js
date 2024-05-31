@@ -3,16 +3,16 @@ import { View, Text, TouchableOpacity, Image, StyleSheet, ScrollView } from 'rea
 import Header from '../components/Header';
 
 const plans = [
-  { name: 'UX/UI project', duration: '3 months', period: 'May - August' },
-  { name: 'Application', duration: '6 months', period: 'May - December' },
-  { name: 'CSS for Dev', duration: '3 months', period: 'May - August' },
-  { name: 'HTML', duration: '6 months', period: 'May - December' },
-  { name: '3D Design', duration: '3 months', period: 'May - August' },
-  { name: 'Web Design', duration: '6 months', period: 'May - December' },
-  { name: 'CSS for Dev', duration: '3 months', period: 'May - August' },
-  { name: 'HTML', duration: '6 months', period: 'May - December' },
-  { name: '3D Design', duration: '3 months', period: 'May - August' },
-  { name: 'Web Design', duration: '6 months', period: 'May - December' },
+  { name: 'Online Course Completion', duration: '3 months', period: 'May - August' },
+  { name: 'Language Learning', duration: '8 months', period: 'April - December' },
+  { name: 'Literature Review', duration: '2 months', period: 'June - August' },
+  { name: 'Experimental Research', duration: '6 months', period: 'June - December' },
+  { name: 'Recipe Mastery', duration: '5 months', period: 'March - August' },
+  { name: 'Culinary Techniques', duration: '4 months', period: 'May - December' },
+  { name: ' Workout Routine', duration: '10 months', period: 'May - August' },
+  { name: 'Healthy Eating', duration: '8 months', period: 'May - December' },
+  { name: 'Daily Schedule Optimization', duration: '9 months', period: 'May - August' },
+  { name: 'Productivity Techniques', duration: '6 months', period: 'May - December' },
 ];
 
 const PlanScreen = ({ navigation }) => {

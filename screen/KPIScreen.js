@@ -3,29 +3,28 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet, FlatList } from '
 import Header from '../components/Header';
 
 const completedData = [
-  { id: '1', date: '5/2/2024', title: 'Greatest way to a good Economy', activity: 'Education' },
-  { id: '2', date: '5/2/2024', title: 'Most essential tips for Burnout', activity: 'IT' },
-  { id: '3', date: '5/2/2024', title: 'Greatest way to a good Economy', activity: 'Education' },
-  { id: '4', date: '5/2/2024', title: 'Most essential tips for Burnout', activity: 'Health' },
-  { id: '5', date: '5/2/2024', title: 'Most essential tips for Burnout', activity: 'Health' },
+  { id: '5', date: '5/32/2024', title: 'Time Management KPI', activity: 'Time' },
+  { id: '1', date: '5/2/2024', title: ' Learning Progress KPI', activity: 'Education' },
+  { id: '2', date: '5/16/2024', title: 'Research Milestone KPI', activity: 'IT' },
+  { id: '3', date: '5/12/2024', title: 'Culinary Skills Improvement KPI', activity: 'Education' },
+  { id: '4', date: '5/25/2024', title: 'Health & Fitness KPI', activity: 'Health' },
 ];
 
 const undueData = [
-    { id: '1', date: '5/2/2024', title: 'Most essential tips for Burnout', activity: 'IT' },
-    { id: '2', date: '5/2/2024', title: 'Greatest way to a good Economy', activity: 'Education' },
-    { id: '3', date: '5/2/2024', title: 'Most essential tips for Burnout', activity: 'Sport' },
-    { id: '4', date: '5/2/2024', title: 'Greatest way to a good Economy', activity: 'Education' },
-    { id: '5', date: '5/2/2024', title: 'Most essential tips for Burnout', activity: 'IT' },
-]
+  { id: '1', date: '5/2/2024', title: ' Learning Progress KPI', activity: 'Education' },
+  { id: '5', date: '5/2/2024', title: 'Time Management KPI', activity: 'Time' },
+  { id: '3', date: '5/2/2024', title: 'Culinary Skills Improvement KPI', activity: 'Education' },
+  { id: '2', date: '5/2/2024', title: 'Research Milestone KPI', activity: 'IT' },
+  { id: '4', date: '5/2/2024', title: 'Health & Fitness KPI', activity: 'Health' },
+];
 
 const lateData = [
-    { id: '1', date: '5/2/2024', title: 'Greatest way to a good Economy', activity: 'Health' },
-    { id: '2', date: '5/2/2024', title: 'Greatest way to a good Economy', activity: 'Education' },
-    { id: '3', date: '5/2/2024', title: 'Most essential tips for Burnout', activity: 'IT' },
-    { id: '4', date: '5/2/2024', title: 'Most essential tips for Burnout', activity: 'IT' },
-    { id: '5', date: '5/2/2024', title: 'Most essential tips for Burnout', activity: 'Health' },
-]
-
+  { id: '2', date: '5/2/2024', title: 'Research Milestone KPI', activity: 'IT' },
+  { id: '1', date: '5/2/2024', title: ' Learning Progress KPI', activity: 'Education' },
+  { id: '3', date: '5/2/2024', title: 'Culinary Skills Improvement KPI', activity: 'Education' },
+  { id: '5', date: '5/2/2024', title: 'Time Management KPI', activity: 'Time' },
+  { id: '4', date: '5/2/2024', title: 'Health & Fitness KPI', activity: 'Health' },
+];
 
 const KPIScreen = ({ navigation }) => {
   const [selectedTab, setSelectedTab] = useState('Completed');

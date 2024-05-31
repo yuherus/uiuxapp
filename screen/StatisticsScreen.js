@@ -7,10 +7,10 @@ const screenWidth = Dimensions.get('window').width;
 
 const StatisticsScreen = ({ navigation }) => {
   const pieData = [
-    { name: 'Language', population: 12, color: '#0062ff', legendFontColor: '#7F7F7F', legendFontSize: 15 },
-    { name: 'Research', population: 15, color: '#ff974a', legendFontColor: '#7F7F7F', legendFontSize: 15 },
-    { name: 'School', population: 13, color: '#3dd598', legendFontColor: '#7F7F7F', legendFontSize: 15 },
-    { name: 'Intern', population: 41, color: '#ffc542', legendFontColor: '#7F7F7F', legendFontSize: 15 },
+    { name: 'Language', population: 12, color: '#f4f3ff', legendFontColor: '#7F7F7F', legendFontSize: 15 },
+    { name: 'Research', population: 15, color: '#d9d6fe', legendFontColor: '#7F7F7F', legendFontSize: 15 },
+    { name: 'School', population: 13, color: '#7a5af8', legendFontColor: '#7F7F7F', legendFontSize: 15 },
+    { name: 'Intern', population: 41, color: '#3e1c96', legendFontColor: '#7F7F7F', legendFontSize: 15 },
   ];
 
   const barData ={
@@ -22,14 +22,15 @@ const StatisticsScreen = ({ navigation }) => {
       [80, 70],
       [90, 120],
     ],
-    barColors: ['#d9d6fe', '#cbcad7'],
+    barColors: ['#ebe9fe', '#9b8afb'],
    }
 
    const lineData = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June'],
     datasets: [{
       data: [ 20, 45, 28, 80, 99, 43 ],
-      color: (opacity = 1) => `rgba(20, 20, 20, ${opacity})` 
+      color: (opacity = 1) => `rgba(98, 0, 238, ${opacity})` ,
+      strokeWidth: 0.5
     }]
   }
 
@@ -60,7 +61,7 @@ const StatisticsScreen = ({ navigation }) => {
                 height={300}
                 chartConfig={chartConfig}
                 verticalLabelRotation={30}
-
+                yAxisSuffix='h'
                 />
             </View>
 
@@ -69,9 +70,12 @@ const StatisticsScreen = ({ navigation }) => {
                 <LineChart
                 data={lineData}
                 width={screenWidth - 60}
+                yAxisSuffix='h'
                 height={220}
                 chartConfig={chartConfig}
                 verticalLabelRotation={30}
+                withDots={false}
+                
                 />
             </View>
         </ScrollView>
@@ -80,10 +84,9 @@ const StatisticsScreen = ({ navigation }) => {
 };
 
 const chartConfig = {
-  backgroundGradientFrom: "#ffffff",
-  backgroundGradientTo: "#fafafa",
-  decimalPlaces: 0,
-  color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+  backgroundGradientFrom: '#fff',
+  backgroundGradientTo: '#fff',
+  color: (opacity = 1) => `rgba(98, 0, 238, ${opacity})`,
   labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
   style: {
     borderRadius: 16,

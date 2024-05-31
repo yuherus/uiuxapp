@@ -5,12 +5,16 @@ import Header from '../components/Header';
 
 const ActivityScreen = ({ navigation }) => {
   const activities = [
-    { id: 1, title: 'UI/UX', duration: '3 months', activity: 'Activity #1' },
-    { id: 2, title: 'Technology behind the Blockchain', duration: '14:00-15:00 every Friday', activity: 'Activity #2' },
+    { id: 1, title: 'Enroll in Course', duration: '3 months', activity: 'Activity #1' },
+    { id: 2, title: 'Weekly Lessons', duration: '14:00-15:00 every Friday', activity: 'Activity #2' },
     { id: 3, title: 'Greatest way to a good Economy', duration: '3 months', activity: 'Activity #3' },
-    { id: 4, title: 'Most essential tips for Burnout', duration: '3 months', activity: 'Activity #4' },
-    { id: 5, title: 'IT Nihongo', duration: '3 months', activity: 'Activity #5' },
-    { id: 6, title: 'Finance', duration: '3 months', activity: 'Activity #6' },
+    { id: 4, title: 'Final Project', duration: '3 months', activity: 'Activity #4' },
+    { id: 5, title: 'Daily Vocabulary Practice', duration: '3 months', activity: 'Activity #5' },
+    { id: 6, title: 'Conversation Sessions', duration: '3 months', activity: 'Activity #6' },
+    { id: 7, title: 'Identify Sources', duration: '3 months', activity: 'Activity #7' },
+    { id: 8, title: 'Summarize Findings', duration: '3 months', activity: 'Activity #8' },
+    { id: 9, title: 'Draft Review', duration: '3 months', activity: 'Activity #9' },
+    { id: 10, title: 'Analyze Data', duration: '3 months', activity: 'Activity #10' },
   ];
 
   const renderItem = ({ item }) => (

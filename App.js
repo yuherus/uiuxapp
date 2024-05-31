@@ -830,7 +830,6 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 16,
-    marginBottom: 8,
   },
   formGroup: {
     width: '100%',

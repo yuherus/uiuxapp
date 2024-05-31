@@ -127,6 +127,8 @@ const HomeScreen = ({navigation}) => {
             chartConfig={chartConfig}
             style={styles.chart}
         />
+        {/* Chú thích cho chart */}
+        
       </ScrollView>
     </View>
   );
